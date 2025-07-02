@@ -9684,3 +9684,147 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+
+
+    /* Styles for registration-services.html */
+    /*Added by Sourabh */
+
+
+    .service-container {
+      max-width:1400px;
+      margin-top: 50px;
+      margin-right :auto;
+      margin-left: auto;
+      background-color: white;
+      text-align: center;
+    }
+
+    .service-container h2{
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    .service-info{
+      margin-top: 50px;
+      display:flex;
+      justify-content: space-between;
+      background-image: url("../static/world-map-dotted.svg");
+      background-size: auto 160%;
+      background-position-y: center;
+      background-position-x: center;
+      background-repeat: no-repeat;
+
+    }
+    
+    .service-info h3{
+      font-size: large;
+      font-weight: 600;
+      margin-bottom: 0px;
+      
+    }
+
+    .service-form{
+      width: 400px;
+      border: 2px solid;
+      text-align: left;
+      /* margin-left: 100px */
+      /* display: flex;
+      flex-direction: column; */
+      margin-bottom: 30px;
+      padding:30px;
+      background-color:rgba(0, 200, 0, 0.2);
+       backdrop-filter: blur(2px);
+      border-radius: 20px;
+       box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;
+    }
+
+    .service-form input{
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .service-form label{
+      margin-top: 20px;
+      margin-bottom: 2px;
+      cursor: default;
+    }
+
+
+    .service-form button{
+      width: 100%;
+      margin-top: 35px;
+      padding: 5px 10px;
+      color: white;
+      background-color: #28a745;
+      border-style: none;
+      border-radius: 10px;
+    }
+
+    .service-form button:hover{
+      background-color: #289345;
+    }
+
+
+    .service-requirements{
+      text-align: left;
+      flex-grow: 1;
+      margin-left: 50px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+      background-color: rgba(0, 90, 0, 0.11);
+      backdrop-filter: blur(3px);
+      padding: 20px 30px;
+      border-radius: 30px;
+
+    }
+
+    .service-requirements h2{
+      
+      font-size: 22px;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      margin-left: 1cqmax;
+
+    
+    }
+
+    .service-requirements p{
+      color: #080808;
+      font-size: 15px;
+      font-weight: 600;
+    
+    }
+
+
+    .documents-required{
+      max-width: 1400px;
+      height : 1110px;
+      margin: 100px auto;
+
+    }
+
+
+    .documents-required h3{
+      text-align: center;
+    }
+
+    .document-cards{
+      background-color: rgba(0, 0, 0, 0.1);
+      display: flex;
+      padding: 30px;
+      
+      gap: 70px;
+    }
+
+    .single-document-card{
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+
+    }
