@@ -1,0 +1,504 @@
+/* Styles for registration-services.html */
+/*Added by Sourabh */
+
+
+
+/* Styles for service-container section */
+
+.service-container {
+  max-width: 1400px;
+  margin: 10px auto;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+.service-info {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: relative;
+  background-image: url("../static/world-map-dotted.svg");
+}
+
+
+.service-form {
+  width: 100%;
+  max-width: 550px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  text-align: left;
+  margin: 0px 0px 30px 10px;
+  padding: 30px;
+  background-color: rgba(0, 200, 0, 0.10);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  box-shadow: 15px 15px 30px #bebebe,
+    -15px -15px 30px #ffffff;
+}
+
+.service-form h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0px 0px 5px 0px;
+  color: #444;
+}
+
+.service-form label {
+  font-size: 0.92rem;
+  color: #333;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  cursor: default;
+
+}
+
+.service-form input[type="text"],
+.service-form input[type="email"] {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.service-form input[type="text"]:focus,
+.service-form input[type="email"]:focus {
+  outline: none;
+  border-color: #28a745;
+  /* Green border on focus */
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+  /* Subtle glow on focus */
+}
+
+
+.service-form button {
+  width: 100%;
+  margin-top: 35px;
+  padding: 5px 10px;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.service-form button:hover {
+  background-color: #289345;
+  transform: translateY(-2px);
+}
+
+
+.service-requirements {
+  width: 100%;
+  max-width: 720px;
+  text-align: left;
+  flex-grow: 1;
+  margin: 0px 10px 30px 10px;
+  background-color: rgba(255, 120, 0, 0.1);
+  backdrop-filter: blur(4px);
+  padding: 20px 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: -15px 15px 30px #bebebe,
+    15px -15px 30px #ffffff;
+
+}
+
+.service-requirements h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 10px 0px 30px 10px;
+}
+
+.service-requirements p {
+  color: #444;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+  .service-info {
+    flex-direction: column; /* Stack items vertically on medium screens */
+    align-items: center; /* Center items when stacked */
+    margin-top: 20px;
+    gap: 30px;
+    /* Adjust gap when stacking */
+  }
+
+  .service-form,
+  .service-requirements {
+    margin: 0;
+    /* Remove specific margins when stacked, let gap handle it */
+  }
+
+  .service-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .service-form h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-requirements h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-requirements p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-container {
+    padding: 20px;
+  }
+
+  .service-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-info{
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .service-form,
+  .service-requirements {
+    padding: 20px;
+  }
+}
+
+
+/* Styles for Document Required Section */
+
+
+/* Wrapper div for documents-required section */
+.documents-required-wrapper {
+  max-width: 1450px;
+  padding: 0px 50px;
+  margin: 70px auto;
+}
+
+.documents-required {
+  border-radius: 20px;
+  padding: 0;
+  background: linear-gradient(145deg, #FFDDC1, rgba(255, 120, 0, 0.5));/*Subtle gradient or soft color, Soft orange to slightly deeper orange */
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- .documents-required h3 (Section Heading) --- */
+.documents-required h3 {
+  text-align: center;
+  /* Use padding-top to create space *inside* the parent, preventing margin collapse */
+  padding-top: 10px;
+  margin-bottom: 20px;
+  color: #4A4A4A; 
+  /* A softer dark gray for better contrast and elegance */
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); 
+  /* Very subtle text shadow */
+}
+
+/* --- .document-cards (Container for the individual cards) --- */
+.document-cards {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow cards to wrap to the next line on smaller screens */
+  justify-content: center;
+  /* Center cards when they wrap */
+  gap: 40px;
+  /* Reduced gap slightly for tighter packing */
+  padding: 30px 0px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 0px auto;
+}
+
+/* --- .single-document-card (Individual card) --- */
+.single-document-card {
+  width: 150px;
+  /* min-height: 280px; /* Optional: give cards a minimum height for consistency */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* Align content to the top */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9));
+  /* Lighter, subtle background for cards */
+  padding: 20px 10px;
+  border-radius: 12px;
+  text-align: center;
+  /* text is centered within the card */
+  cursor: default;
+
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.single-document-card:hover {
+  transform: translateY(-5px);
+  /* Lift card on hover */
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.15),
+    0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- .single-document-card img (Image within the card) --- */
+.single-document-card img {
+  max-width: 100px;
+  /* Limit image width */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Remove extra space below inline images */
+  margin-bottom: 20px;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+  /* Subtle shadow for the image itself */
+}
+
+/* --- Paragraph text within card --- */
+.single-document-card p {
+  color: #333;   
+  /* Dark text for better readability */
+  font-weight: 600;
+  font-size: 0.7em;
+  line-height: 1.5;
+  margin: 0px;
+  /* Remove default paragraph top margin to control spacing */
+  flex-grow: 1; /* Allow paragraph to take up available vertical space */
+  display: flex;
+  /* Use flex to align text content better if needed */
+  align-items: center;
+  /* Center text vertically if flex-grow is used */
+  justify-content: center;
+  /* Center text horizontally */
+}
+
+
+@media (max-width: 768px) {
+  .documents-required-wrapper{
+    padding: 0px 20px;
+    margin: 40px auto;
+
+  }
+  .document-cards{
+    gap: 30px;
+  }
+
+  .documents-required h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .documents-required-wrapper{
+    margin: 40px auto;
+  }
+
+
+  .document-cards{
+    gap: 20px;
+  }
+
+
+}
+
+
+
+/* Styles for service-charge-section*/
+
+.service-charges-section {
+  max-width: 1400px;
+  margin: 80px auto 0px auto;
+  padding: 40px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.service-charges-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 50px;
+  /* Space below heading */
+}
+
+.price-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Center cards in the grid */
+  gap: 30px;
+  /* Space between cards */
+  margin-bottom: 40px;
+  /* Space below the grid */
+}
+
+.price-card {
+  /* Light orange gradient background for price cards */
+  background: linear-gradient(135deg, rgba(255, 120, 0, 0.01), rgba(255, 120, 0, 0.1));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid #bbb;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 300px;
+  /* Max width for each card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-8px);
+  /* Lift higher on hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  /* Stronger shadow on hover */
+}
+
+
+
+
+.price-card h3 {
+  font-size: 1.5rem;
+  /* Service name heading */
+  color: #28a745;
+  /* Green color for service names */
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.price-card .price-description {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 25px;
+  min-height: 4em;
+  /* Ensure consistent height for descriptions (approx 3 lines) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-card .price-wrapper {
+  margin-bottom: 25px;
+  margin-top: auto;
+  /* Pushes price to bottom if descriptions are different heights */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-card .price-tag {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #28a745;
+  line-height: 1;
+  /* Tighter line height for price */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.price-card .action-button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+  /* Space between price and button */
+}
+
+.price-card .action-button:hover {
+  background-color: #228b3a;
+  transform: translateY(-2px);
+}
+
+
+
+/* --- Responsive Adjustments for Service Charges --- */
+@media (max-width: 768px) {
+  .service-charges-section h2 {
+    font-size: 2rem;
+  }
+
+  .price-card {
+    max-width: 250px;
+    padding: 25px;
+  }
+
+  .price-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .price-card .price-tag {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .price-card-grid{
+    gap: 10px;
+  }
+
+
+  .service-charges-section {
+    padding: 20px;
+  }
+
+  .service-charges-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .price-card {
+    padding: 20px;
+  }
+
+  .price-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .price-card .price-tag {
+    font-size: 2.2rem;
+  }
+}
