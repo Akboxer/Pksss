@@ -3464,6 +3464,9 @@ input[type="button"].btn-block {
     -ms-flex-pack: justify;
     justify-content: space-between; }
 
+
+/* Below Changes made by Sourabh, for better "Title and Logo " responsiveness */
+
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
@@ -3471,9 +3474,44 @@ input[type="button"].btn-block {
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
-  white-space: nowrap; }
-  .navbar-brand:hover, .navbar-brand:focus {
-    text-decoration: none; }
+  white-space: nowrap;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.company-tagline {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 38px;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* ^ Above Changes made by Sourabh, for better "Title and Logo " responsiveness */
+    
 
 .navbar-nav {
   display: -webkit-box;
@@ -8112,7 +8150,7 @@ h1, h2, h3, h4, h5,
       color: #000000; }
     @media (max-width: 767.98px) {
       .ftco-navbar-light .navbar-brand {
-        margin-bottom: 20px; } }
+        margin-bottom: 0px; } }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
@@ -9684,3 +9722,52 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+
+
+    /* Style for "Scroll to the top " button on every page */
+
+    
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 999;
+  font-size: 25px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ff7800;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #1ba12d;
+  transform: scale(1.1);
+}
+
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+@media (max-width: 600px) {
+  #scrollToTopBtn {
+    bottom: 35px;
+    right: 35px;
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+
+  #scrollToTopBtn i {
+    font-size: 20px;
+  }
+}

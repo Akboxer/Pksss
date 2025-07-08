@@ -62,8 +62,7 @@
 
 }
 
-.service-form input[type="text"],
-.service-form input[type="email"] {
+.service-form input {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 8px;
@@ -82,6 +81,22 @@
   /* Subtle glow on focus */
 }
 
+
+.service-form select {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-form select:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.2);
+}
 
 .service-form button {
   width: 100%;

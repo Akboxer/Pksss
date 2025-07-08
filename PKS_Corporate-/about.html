@@ -50,10 +50,22 @@
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container-fluid">
-	    	<div>
-				<a class="navbar-brand" href="index.html">PKS CORPORATE SERVICES PVT LTD</a>
-				<p class="m-0 d-none d-lg-block" style="color: #000; font-size: 12px; font-weight: 700; border-bottom:2px solid #000; border-top:2px solid #000;">FINANCIAL &amp; TAX ADVISORY SERVICES CORPORTE COMPLIANCES</p>
-			</div>
+	    	<div class="header-wrapper d-flex align-items-center px-3 py-2">
+          <!-- Logo -->
+          <img src="static/pks-logo.png" alt="PKS Logo" class="logo-img me-3" />
+
+          <!-- Title & Tagline -->
+          <div class="d-flex flex-column justify-content-center">
+            <!-- Full Title (visible on lg and up) -->
+            <a href="index.html" class="navbar-brand d-none d-lg-block"> PKS CORPORATE SERVICES PVT LTD </a>
+
+            <!-- Short Title (visible on medium screens only) -->
+            <a href="index.html" class="navbar-brand d-block d-lg-none"> PKS Services </a>
+
+            <!-- Tagline under the full title (visible only on lg and up) -->
+            <p class="company-tagline m-0 d-none d-lg-block">FINANCIAL &amp; TAX ADVISORY SERVICES CORPORATE COMPLIANCES</p>
+          </div>
+        </div>
 	    	<form action="#" class="searchform order-sm-start order-lg-last">
           <div class="form-group d-flex">
             <input type="text" class="form-control pl-3" placeholder="Search">
@@ -372,6 +384,10 @@
         </div>
       </div>
     </section>
+
+		<button id="scrollToTopBtn" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
 
     <footer class="footer">
 			<div class="container-fluid px-lg-5">
