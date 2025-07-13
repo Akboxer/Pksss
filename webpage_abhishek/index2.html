@@ -1,0 +1,92 @@
+<!-- creating a registration form for IEC -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEC Registration form</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <section id="iec-registration" style="background-color: #fff8f1; padding: 60px 20px;">
+  <div class="form-container">
+    <h2 class="form-title">IEC Registration Form</h2>
+    <form class="iec-form" id="iecForm" novalidate>
+      
+      <!-- Personal Information -->
+      <h3 class="section-heading">Personal Information</h3>
+      <div class="form-group">
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <small class="error-message"></small>
+      </div>
+      <div class="form-group">
+        <label for="fathername">Father's Name *</label>
+        <input type="text" id="fathername" name="fathername" required>
+        <small class="error-message"></small>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required>
+        <small class="error-message"></small>
+      </div>
+
+      <!-- Business Details -->
+      <h3 class="section-heading">Business Details</h3>
+      <div class="form-group">
+        <label for="businessname">Business Name *</label>
+        <input type="text" id="businessname" name="businessname" required>
+        <small class="error-message"></small>
+      </div>
+      <div class="form-group">
+        <label for="nature">Nature of Business *</label>
+        <input type="text" id="nature" name="nature" required>
+        <small class="error-message"></small>
+      </div>
+      <div class="form-group">
+        <label for="address">Business Address *</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+        <small class="error-message"></small>
+      </div>
+
+      <!-- Document Details -->
+      <h3 class="section-heading">Document Details</h3>
+      <div class="form-group">
+        <label for="pan">PAN Number *</label>
+        <input type="text" id="pan" name="pan" required>
+        <small class="error-message"></small>
+      </div>
+      <div class="form-group">
+        <label for="aadhar">Aadhar Number *</label>
+        <input type="text" id="aadhar" name="aadhar" required>
+        <small class="error-message"></small>
+      </div>
+      <div class="form-group">
+        <label for="gst">GST Number (Optional)</label>
+        <input type="text" id="gst" name="gst">
+      </div>
+
+      <!-- Contact Details -->
+      <h3 class="section-heading">Contact Details</h3>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+        <small class="error-message"></small>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number *</label>
+        <input type="tel" id="mobile" name="mobile" required>
+        <small class="error-message"></small>
+      </div>
+
+      <!-- Submit -->
+      <div class="form-group">
+        <button type="submit" class="submit-btn">Submit Registration</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
